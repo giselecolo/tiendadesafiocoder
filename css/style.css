@@ -40,6 +40,7 @@
 .header-compra li a:hover{
     font-weight: bold;    
 }
+/*solo funciona sobre la palabra ingresar siendo que están en la misma línea.*/
 
 .header-compra li img{
     width: 28px;
@@ -384,8 +385,11 @@ h1{
 .footer-izquierda-enlaces li a{
     color: black;
     text-decoration: none;
+    transition: 1s;
 }
-
+.footer-izquierda-enlaces li a:hover{
+    text-decoration: overline;
+}
 .footer-derecha-contacto h3{
     font-family: 'Arima', cursive;
     font-size: 18px;
@@ -512,8 +516,11 @@ h1{
     color: black;
     margin: 5px;
     background-color: #fbd5e5;
+    transition: 1s;
 }
-
+.info-relevante h3:hover{
+    background-color: hsla(340, 5%, 78%, 0.87);
+}
 .info-relevante h4{
     font-family: 'Arima', cursive;
     font-size: 16px;
@@ -532,8 +539,11 @@ h1{
     color: black;
     margin: 12px; 
     background-color: #f7bfd8;
+    transition: 1s;
 }
-
+.info-adicional h2:hover{
+    background-color: hsla(340, 5%, 78%, 0.87);
+}
 .info-adicional h3{
     font-family:'Arima', cursive;
     font-size: 16px;
