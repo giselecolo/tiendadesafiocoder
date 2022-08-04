@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Productos - Cambalache</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" a href="../img/favicon.png">
 </head>
+
 <body>
     <!---HEADER-->
     <div class="header-top">
@@ -23,21 +27,81 @@
             </div>
         </div>
         <div class="header-menu">
-            <nav class="nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./mayorista.html">Mayoristas</a></li>
-                    <li><a href="./envio.html">Envío</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav me-auto justify-content-around mb-2 mb-lg-0 w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-15">
+                                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./mayorista.html">Mayorista</a>
+                            </li>
+                            <li class="nav-item mx-15">
+                                <a class="nav-link active" aria-current="page" href="./envio.html">Envío</a>
+                            </li>
+                            <li class="nav-item mx-15">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-<!---MAIN-->
+    <!---MAIN-->
     <main>
         <section class="productos">
             <h1>Cuadernos</h1>
+            <!--Bootstrap-->
+            <div class="botones d-flex justify-content-center"> 
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Precio
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href=""></a>De mayor a menor </li>
+                        <li><a href=""></a> de menor a mayor</li>
+                        <li><a href=""></a> Más vendidos </li>
+                        
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle "
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipo de hoja
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href=""></a>Lisos</li>
+                        <li><a href=""></a>Rayados</li>
+                        <li><a href=""></a>Bullet</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle "
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cuaderno
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href=""></a>Anillados</li>
+                        <li><a href=""></a>Agendas</li>
+                        <li><a href=""></a>Diarios íntimos</li>
+                        <li><a href=""></a>A6-souvenir</li>
+                        <li><a href=""></a>Diarios con caja</li>
+                        <li><a href=""></a>Tapa blanda</li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="productos-listado">
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/diario.jpg" alt="diariointimo">
@@ -58,14 +122,14 @@
                     <h2>Cuaderno Anillado A5</h2>
                     <h3>Anillado tapa dura</h3>
                     <h4>$180</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/tapablanda.jpg" alt="tapablanda">
                     <h2>Cuadernos Tapa Blanda</h2>
                     <h3>A5 tapa blanda</h3>
                     <h4>$100</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/planners.jpg" alt="diariointimo">
@@ -86,14 +150,14 @@
                     <h2>Diario íntimo liso</h2>
                     <h3>100 hojas lisas</h3>
                     <h4>$290</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/souvenirs.jpg" alt="tapablanda">
                     <h2>A6 para souvenir</h2>
                     <h3>Tapa blanda xs</h3>
                     <h4>$100</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/diaria.jpg" alt="diariointimo">
@@ -114,33 +178,35 @@
                     <h2>A6 anillados</h2>
                     <h3>Hojas lisas, tamaño xs</h3>
                     <h4>$290</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
                 <div class="productos-listado-detalle">
                     <img class="productos-listado-img" src="../img/firmas.jpg" alt="tapablanda">
                     <h2>Libro de firmas</h2>
                     <h3>Libro con caja A5</h3>
                     <h4>$1000</h4>
-                    <a class="boton"href="">¡Lo quiero!</a>
-            </div>
-            <div class="container">
-                <div class="boton-ver-mas">
-                    <a class="boton-ver-mas link" href="">Ver más productos</a>
+                    <a class="boton" href="">¡Lo quiero!</a>
                 </div>
+                <div class="container">
+                    <div class="boton-ver-mas">
+                        <a class="boton-ver-mas link" href="">Ver más</a>
+                    </div>
         </section>
     </main>
-<!---FOOTER-->
+    <!---FOOTER-->
     <footer>
         <div class="footer-contenedor">
             <div class="footer-logo">
                 <img src="../img/logo.png" alt="logo-footer">
             </div>
-            <div class="footer-items"> <!--flex p/hijos-->
+            <div class="footer-items">
+                <!--flex p/hijos-->
                 <div class="footer-izquieda">
                     <div class="footer-izquierda-pago">
                         <h3>Medios de pago</h3>
                     </div>
-                    <div class="footer-izquierda-iconos"> <!--flex p/ hijos-->
+                    <div class="footer-izquierda-iconos">
+                        <!--flex p/ hijos-->
                         <img src="../img/american-express.png" alt="pago">
                         <img src="../img/efectivo.png" alt="pago">
                         <img src="../img/maestro.png" alt="pago">
@@ -164,28 +230,31 @@
                 </div>
                 <div class="footer-derecha">
                     <div class="footer-derecha-contacto">
-                            <h3>Nuestras redes</h3>
+                        <h3>Nuestras redes</h3>
+                    </div>
+                    <div class="footer-derecha-iconos">
+                        <div>
+                            <a href="https://www.instagram.com/cambalachepapeles/" target="_blank"><img
+                                    src="../img/instagram.png" alt="instagram"></a>
+                            <a href="https://api.whatsapp.com/send?phone=541162956074&text=%C2%A1Hola%21+Estoy+en+la+tienda+Cambalache+Papeles+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n."
+                                target="_blank"><img src="../img/whatsapp.png" alt="logowhatsapp"></a>
                         </div>
-                        <div class="footer-derecha-iconos">
-                            <div>
-                                <a href="https://www.instagram.com/cambalachepapeles/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-                                <a href="https://api.whatsapp.com/send?phone=541162956074&text=%C2%A1Hola%21+Estoy+en+la+tienda+Cambalache+Papeles+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n." target="_blank"><img src="../img/whatsapp.png" alt="logowhatsapp"></a>
-                            </div>
-                            <div class="footer-derecha-info">
-                                <h4>Av. Cabildo 500, Colegiales, CABA</h4>
-                                <h3>Horarios de atención</h3>
-                                <h4>L a V de 9 a 17hs</h4>
-                            </div>
-                            
+                        <div class="footer-derecha-info">
+                            <h4>Av. Cabildo 500, Colegiales, CABA</h4>
+                            <h3>Horarios de atención</h3>
+                            <h4>L a V de 9 a 17hs</h4>
                         </div>
 
                     </div>
+
                 </div>
-
             </div>
-
         </div>
-
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

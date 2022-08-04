@@ -71,46 +71,34 @@ header{
     justify-content: flex-start;
     align-items: center;
 }
-
 .header-menu{
     background-color: #ffe4ec;
     width: 100%;
 }
-
-.nav ul li{
-    list-style: none;
+.nav-item{
     font-family: 'Arima', cursive;
     font-size: 20px;
-    margin: 15px;
-}
-
-.nav ul li a{
+    margin-left: 35px;
     color: black;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.nav ul li a:hover{
-        font-weight: bold;    
+    list-style: none;
 }
 
-.nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.nav-item a:hover{
+    font-weight: bold;    
 }
+
 
 /*index-MAIN y pages-productos*/
 
 .hero{
     width: 100%;
     box-sizing: border-box;
+    z-index: auto;
+}
+.slide{
+    z-index: 0;
 }
 
-.hero img{
-    width: 100%;
-    margin-bottom: 5px;
-}
-    
 h1{
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -154,15 +142,14 @@ h1{
 .boton:hover{
     background-color: #eb9ac0;
     font-weight: bold;
+    color: black;
 }
-
-.container{
+.contenedor-boton{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .boton-ver-mas{
     text-decoration: none;
     color: black;
@@ -170,19 +157,16 @@ h1{
     background-color: #ffc1d5;
     border-radius: 5px;
     font-family: 'Arima', cursive;
-    font-size: 18px;
+    font-size: 17px;
 }
 .boton-ver-mas:hover{
     background-color: #eb9ac0;
     font-weight: bold;
+    color: black;
 }
 .link{
     text-decoration: none;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-    font-family: 'Arima', cursive;
-    font-size: 18px; 
+    text-align: center; 
 }
 
 .productos-listado-img{
@@ -435,9 +419,22 @@ h1{
 }
 
 /*PRODUCTOS*/
+.dropdown-toggle{
+    font-family: 'Arima', cursive;
+    font-size: 15px;
+    font-style: normal;
+    text-align: center;
+    color: black;
+    margin-bottom: 7px;
+    padding: 10px;
+    background-color: #fbd5e5;
+}
 
-
-
+.dropdown-toggle:hover{
+    background-color: #eb9ac0;
+    font-weight: bold;
+    color: black;
+}
 /*MAYORISTA*/
 .info-mayorista{
     width: 100%;
@@ -498,14 +495,15 @@ h1{
     font-style: normal;
     text-align: center;
 }
-
-.info-compra{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+.accordion-button{
+    background-color: #fbd5e5;
 }
-
-.info-relevante h3{
+.accordion-button:hover{
+    background-color: #eb9ac0;
+    font-weight: bold;
+    color: black;
+}
+.accordion-header{
     width: 100%;
     height: 100%;
     font-family: 'Arima', cursive;
@@ -515,8 +513,6 @@ h1{
     font-weight: bold;
     color: black;
     margin: 5px;
-    background-color: #fbd5e5;
-    transition: 1s;
 }
 .info-relevante h3:hover{
     background-color: hsla(340, 5%, 78%, 0.87);
@@ -556,6 +552,31 @@ h1{
 }
 
 /*ENVÍO*/
+.info-relevante h3{
+    width: 100%;
+    height: 100%;
+    font-family: 'Arima', cursive;
+    font-size: 23px;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+    background-color: #fbd5e5;
+    transition: 1s;
+}
+.info-relevante h3:hover{
+    background-color: hsla(340, 5%, 78%, 0.87);
+}
+.info-relevante h4{
+    font-family: 'Arima', cursive;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
 .info-imagen img{
     width: 70%;
     height: 60%;
@@ -584,51 +605,56 @@ h1{
 }
 
 /*CONTACTO*/
+.fondo-principal{
+    background-image: url("../img/contacto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .formulario{
     font-family:'Arima', cursive;
     font-size: 16px;
     font-style: normal;
     color: black;
-    background-image: url("../img/contacto.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
 }
-
-.formulario-titulo{
-        font-family: 'Pacifico', cursive;
-        text-align: left;
-        font-size: 28px;
-        color: rgb(7, 7, 7);
-        padding: 2px;
-        margin-bottom: 10px;
-}
-
-.formulario-campos{
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
-
-.formulario-box{
+.formulario-caja{
     padding: 5px;
-    width: 100%;
+    
     border: #f7bfd8 solid 4px;
-    background-color: #fdeaf2;
+    background-color: #fdeaf2b2;
 }
 
-.formulario-encuesta{
-    display: inline-block;
+.btn-primary{
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    background-color: #ffc1d5;
+    border-radius: 5px;
+    font-family: 'Arima', cursive;
+    font-size: 17px;
 }
 
+.btn-primary:hover{
+    background-color: #eb9ac0;
+    font-weight: bold;
+    color: black;
+}
+
+.form-control:hover{
+    border: 2px solid #eb9ac0;
+}
+
+.form-check-input{
+    border: 1px solid #eb9ac0;
+}
 
         /*media queris*/
 /*index*/
@@ -987,7 +1013,18 @@ h1{
         grid-auto-rows: 267px;
     }
 }
-
+/*--envío*/
+@media screen and (max-width:520px){
+    .animate__animated img{
+        display: none;
+    }
+    .info-relevante h3{
+        font-size: 17px;
+    }
+    .info-relevante h4{
+        font-size: 15px;
+    }
+}
 
 
 
