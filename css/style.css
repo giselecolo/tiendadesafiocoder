@@ -419,18 +419,19 @@ h1{
 }
 
 /*PRODUCTOS*/
-.dropdown-toggle{
+
+.input-group{
     font-family: 'Arima', cursive;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     text-align: center;
     color: black;
-    margin-bottom: 7px;
-    padding: 10px;
     background-color: #fbd5e5;
 }
-
-.dropdown-toggle:hover{
+.btn-outline-secondary{
+    color: black;
+}
+.btn-outline-secondary:hover{
     background-color: #eb9ac0;
     font-weight: bold;
     color: black;
@@ -1026,5 +1027,10 @@ h1{
     }
 }
 
-
+/*--productos--*/
+@media screen and (max-width:630px){
+    .input-group{
+        font-size: 11px;
+    }
+}
 

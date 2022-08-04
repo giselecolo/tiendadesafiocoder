@@ -62,43 +62,18 @@
         <section class="productos">
             <h1>Cuadernos</h1>
             <!--Bootstrap-->
-            <div class="botones d-flex justify-content-center"> 
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Precio
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href=""></a>De mayor a menor </li>
-                        <li><a href=""></a> de menor a mayor</li>
-                        <li><a href=""></a> Más vendidos </li>
-                        
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle "
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Tipo de hoja
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href=""></a>Lisos</li>
-                        <li><a href=""></a>Rayados</li>
-                        <li><a href=""></a>Bullet</li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle "
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Cuaderno
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href=""></a>Anillados</li>
-                        <li><a href=""></a>Agendas</li>
-                        <li><a href=""></a>Diarios íntimos</li>
-                        <li><a href=""></a>A6-souvenir</li>
-                        <li><a href=""></a>Diarios con caja</li>
-                        <li><a href=""></a>Tapa blanda</li>
-                    </ul>
+            <div class="container col-7 col-lg-4">
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Mostrar todo</option>
+                        <option value="1">Agendas</option>
+                        <option value="2">Anillados</option>
+                        <option value="3">Tapa Blanda</option>
+                        <option value="4">Diario íntimos</option>
+                        <option value="5">Diarios con caja</option>
+                        <option value="6">A6 - tapa blanda</option>
+                        <option value="7">Recetarios</option>
+                    </select> <button class="btn btn-outline-secondary" type="button">Buscar</button>
                 </div>
             </div>
             
