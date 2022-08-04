@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Envío - Cambalache</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" a href="../img/favicon.png">
 </head>
+
 <body>
     <!----HEADER-->
     <div class="header-top">
@@ -25,8 +28,8 @@
             </div>
         </div>
         <div class="header-menu">
-            <nav class="navbar navbar-expand-lg"> 
-                <div class="container-fluid"> 
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -55,17 +58,60 @@
             </nav>
         </div>
     </header>
-<!-----MAIN----->
+    <!-----MAIN----->
     <main>
-        <h1>Envíos</h1>
-        <section class="info">
-            <div class="info-relevante">
-                <h3>Retiro en CABA por el taller</h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facere voluptatibus quia temporibus cupiditate hic aspernatur totam veniam sapiente sint, ipsa fugiat repudiandae, nisi minus aperiam vel earum eligendi tempora?</h4>
-                <h3>Envío en CABA y GBA </h3>
-                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla provident consequuntur unde maxime doloremque libero, animi explicabo alias ad molestiae, possimus mollitia accusamus. Fugiat sit exercitationem amet id facere, animi perferendis quia odio doloremque consectetur sapiente qui aliquam ipsam.</h4>
-                <h3>Envíos a otras provincias</h3>
-                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta facere velit placeat delectus fugiat iste labore ab nulla dolorum soluta eum quibusdam, totam voluptates accusamus officiis reprehenderit ad ut incidunt quis vitae nisi cum sed? Ex suscipit ipsam incidunt dolorum!</h4>
+        <h1>Info sobre el envío</h1>
+        <section class="container col-10 col-leg-7">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Retiro en CABA por el taller
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis consequuntur enim atque fugiat, officia hic deleniti excepturi iure corrupti laboriosam molestias dolorum exercitationem sint accusamus, cum a dolor ut. Culpa!</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Envío en CABA y GBA 
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <p>It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.It's also worth noting that just about any HTML can go within the.</p> 
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Envíos a otras provincias
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <p>It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.It's also worth noting that just about any HTML can go within the.</p> 
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="info-imagen">
                 <div class="animate__animated animate__bounceInRight">
@@ -73,57 +119,62 @@
                 </div>
             </div>
         </section>
-            <section class="info">
-                <div class="info-adicional">
-                    <h2>¿Cómo llegar?</h2>
-                    <div class="info-googlemaps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.6433158070738!2d-58.443342798124185!3d-34.571613231588756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c0ee696ee5%3A0x16e0b641039b5e93!2sAv.%20Cabildo%20500%2C%20C1426AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1656820492148!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-    </main>
-
-<!----FOOTER-->
-<footer>
-    <div class="footer-contenedor">
-        <div class="footer-logo">
-            <img src="../img/logo.png" alt="logo-footer">
-        </div>
-        <div class="footer-items"> 
-            <div class="footer-izquieda">
-                <div class="footer-izquierda-pago">
-                    <h3>Medios de pago</h3>
-                </div>
-                <div class="footer-izquierda-iconos">
-                    <img src="../img/american-express.png" alt="pago">
-                    <img src="../img/efectivo.png" alt="pago">
-                    <img src="../img/maestro.png" alt="pago">
-                    <img src="../img/master.png" alt="pago">
-                    <img src="../img/mercadopago.png" alt="pago">
-                    <img src="../img/nativa.png" alt="pago">
-                    <img src="../img/pagofacil.png" alt="pago">
-                    <img src="../img/deposito.png" alt="pago">
-                    <img src="../img/rapipago.png" alt="pago">
-                    <img src="../img/Visa.png" alt="pago">
-                </div>
-                <div class="footer-izquierda-info">
-                    <ul class="footer-izquierda-enlaces">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./mayorista.html">Mayorista</a></li>
-                        <li><a href="./envio.html">Envío</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
+        <section class="info">
+            <div class="info-adicional">
+                <h2>¿Cómo llegar?</h2>
+                <div class="info-googlemaps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.6433158070738!2d-58.443342798124185!3d-34.571613231588756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c0ee696ee5%3A0x16e0b641039b5e93!2sAv.%20Cabildo%20500%2C%20C1426AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1656820492148!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="footer-derecha">
-                <div class="footer-derecha-contacto">
+        </section>
+    </main>
+
+    <!----FOOTER-->
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer-logo">
+                <img src="../img/logo.png" alt="logo-footer">
+            </div>
+            <div class="footer-items">
+                <div class="footer-izquieda">
+                    <div class="footer-izquierda-pago">
+                        <h3>Medios de pago</h3>
+                    </div>
+                    <div class="footer-izquierda-iconos">
+                        <img src="../img/american-express.png" alt="pago">
+                        <img src="../img/efectivo.png" alt="pago">
+                        <img src="../img/maestro.png" alt="pago">
+                        <img src="../img/master.png" alt="pago">
+                        <img src="../img/mercadopago.png" alt="pago">
+                        <img src="../img/nativa.png" alt="pago">
+                        <img src="../img/pagofacil.png" alt="pago">
+                        <img src="../img/deposito.png" alt="pago">
+                        <img src="../img/rapipago.png" alt="pago">
+                        <img src="../img/Visa.png" alt="pago">
+                    </div>
+                    <div class="footer-izquierda-info">
+                        <ul class="footer-izquierda-enlaces">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./productos.html">Productos</a></li>
+                            <li><a href="./mayorista.html">Mayorista</a></li>
+                            <li><a href="./envio.html">Envío</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-derecha">
+                    <div class="footer-derecha-contacto">
                         <h3>Nuestras redes</h3>
                     </div>
                     <div class="footer-derecha-iconos">
                         <div>
-                            <a href="https://www.instagram.com/cambalachepapeles/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-                            <a href="https://api.whatsapp.com/send?phone=541162956074&text=%C2%A1Hola%21+Estoy+en+la+tienda+Cambalache+Papeles+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n." target="_blank"><img src="../img/whatsapp.png" alt="logowhatsapp"></a>
+                            <a href="https://www.instagram.com/cambalachepapeles/" target="_blank"><img
+                                    src="../img/instagram.png" alt="instagram"></a>
+                            <a href="https://api.whatsapp.com/send?phone=541162956074&text=%C2%A1Hola%21+Estoy+en+la+tienda+Cambalache+Papeles+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n."
+                                target="_blank"><img src="../img/whatsapp.png" alt="logowhatsapp"></a>
                         </div>
                         <div class="footer-derecha-info">
                             <h4>Av. Cabildo 500, Colegiales, CABA</h4>
@@ -131,10 +182,13 @@
                             <h4>L a V de 9 a 17hs</h4>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

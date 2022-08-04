@@ -150,15 +150,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.boton-ver-mas{
-    text-decoration: none;
-    color: black;
-    padding: 6px;
-    background-color: #ffc1d5;
-    border-radius: 5px;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-}
+
 .boton-ver-mas:hover{
     background-color: #eb9ac0;
     font-weight: bold;
@@ -167,6 +159,12 @@ h1{
 .link{
     text-decoration: none;
     text-align: center; 
+    color: black;
+    padding: 6px;
+    background-color: #ffc1d5;
+    border-radius: 5px;
+    font-family: 'Arima', cursive;
+    font-size: 17px;
 }
 
 .productos-listado-img{
@@ -357,8 +355,6 @@ h1{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-
-
 .footer-izquierda-enlaces li{
     list-style: none;
     font-family: 'Arima', cursive;
@@ -419,7 +415,6 @@ h1{
 }
 
 /*PRODUCTOS*/
-
 .input-group{
     font-family: 'Arima', cursive;
     font-size: 14px;
@@ -428,6 +423,10 @@ h1{
     color: black;
     background-color: #fbd5e5;
 }
+.form-select{
+    outline: none;
+}
+
 .btn-outline-secondary{
     color: black;
 }
@@ -441,7 +440,6 @@ h1{
     width: 100%;
     height: 100%;
 }
-
 .info-registro-titulo{
     font-family: 'Arima', cursive;
     font-size: 24px;
@@ -451,7 +449,6 @@ h1{
     margin-bottom: 7px;
     padding: 10px;
 }
-
 .info-registro p{
     font-family: 'Arima', cursive;
     font-size: 18px;
@@ -553,29 +550,30 @@ h1{
 }
 
 /*ENVÍO*/
-.info-relevante h3{
-    width: 100%;
-    height: 100%;
+.accordion-header{
     font-family: 'Arima', cursive;
     font-size: 23px;
     font-style: normal;
     text-align: center;
     font-weight: bold;
     color: black;
-    margin: 5px;
     background-color: #fbd5e5;
     transition: 1s;
+    width: 100%;
+    height: 100%;
 }
-.info-relevante h3:hover{
+.accordion-header:hover{
     background-color: hsla(340, 5%, 78%, 0.87);
 }
-.info-relevante h4{
+.accordion-header:focus{
+    outline:none;
+}
+.accordion-body p{
     font-family: 'Arima', cursive;
     font-size: 16px;
     font-style: normal;
     text-align: center;
     color: black;
-    margin-bottom: 10px;
 }
 
 .info-imagen img{
@@ -633,7 +631,7 @@ h1{
     background-color: #fdeaf2b2;
 }
 
-.btn-primary{
+.btn{
     text-decoration: none;
     color: black;
     padding: 6px;
@@ -643,7 +641,7 @@ h1{
     font-size: 17px;
 }
 
-.btn-primary:hover{
+.btn:hover{
     background-color: #eb9ac0;
     font-weight: bold;
     color: black;

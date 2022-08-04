@@ -44,7 +44,8 @@
                                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item mx-15">
-                                <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="./pages/productos.html">Productos</a>
                             </li>
                             <li class="nav-item mx-15">
                                 <a class="nav-link active" aria-current="page"
@@ -64,33 +65,33 @@
     <!--MAIN-->
     <main>
         <div class="hero">
-            <section>
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner z-index:0">
-                        <div class="carousel-item active">
-                            <img src="./img/banneruno.jpg" class="d-block w-100" alt="...">
+                    <!--bootstrap-->
+                <section>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner z-index:0">
+                            <div class="carousel-item active">
+                                <img src="./img/banneruno.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/bannerdos.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/bannertres.jpg" class="d-block w-100" alt="...">
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./img/bannerdos.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/bannertres.jpg" class="d-block w-100" alt="...">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-        </div>
-        <!--carrusel-->
+                </section>
+            </div>
         <section class="productos">
             <h1>¡Elegí el que vaya con vos!</h1>
             <div class="productos-listado">
@@ -202,17 +203,11 @@
                             <h3>Horarios de atención</h3>
                             <h4>L a V de 9 a 17hs</h4>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
-
         </div>
-
-
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
