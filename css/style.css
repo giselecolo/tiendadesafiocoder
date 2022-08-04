@@ -626,7 +626,6 @@ h1{
 }
 .formulario-caja{
     padding: 5px;
-    
     border: #f7bfd8 solid 4px;
     background-color: #fdeaf2b2;
 }
@@ -662,7 +661,6 @@ h1{
         object-fit: scale-down;
     }
 }
-
 @media screen and (max-width: 970px){
     .regalos p{
         font-size: 19px;
@@ -798,14 +796,6 @@ h1{
     }
 }
 @media screen and (max-width: 566px){
-    .nav ul li{
-        font-size: 16px;
-        margin: 4px;
-    }
-    .nav ul{
-        justify-content: center;
-        flex-direction: column;
-    }
     .footer-izquierda-enlaces li{
         margin: 4px;
     }
@@ -838,11 +828,7 @@ h1{
         padding-top:5px;
     }        
 }
-@media screen and (max-width:400px){
-    .tiempo{
-        height: 200px;
-    }   
-}
+
 @media screen and (max-width:399px){
     .tiempo{
         margin-bottom: 22px;
@@ -876,14 +862,6 @@ h1{
         }
 }
 @media screen and (max-width:845px){
-    .info-relevante h3{
-        font-size: 21px;
-        font-weight: none;
-    }
-    .info-relevante h4{
-        text-align: center;
-        font-size: 15px
-    }
     .info-adicional h3{
         font-size: 16px;
         text-align: center;
@@ -931,12 +909,6 @@ h1{
     .grid-items h3{
         text-align: center;
         font-size: 17px;
-    }
-    .info-relevante h3{
-        font-size: 16px;
-    }
-    .info-relevante h4{
-        font-size: 13px;
     }
     .info-adicional{
         font-size: 19px;
@@ -1016,12 +988,6 @@ h1{
 @media screen and (max-width:520px){
     .animate__animated img{
         display: none;
-    }
-    .info-relevante h3{
-        font-size: 17px;
-    }
-    .info-relevante h4{
-        font-size: 15px;
     }
 }
 
