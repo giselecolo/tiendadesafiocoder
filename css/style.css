@@ -1,27 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 1.75em;
+  color: black;
+  margin: 1rem; }
 
-/*INDEX*/
-/*HEADER*/
-.body{
-    font-size: 16px;
-}
-.header-top{
-    width: 100%;
-    background-color: #ffe4ec;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    list-style: none;
-    font-family: 'Arima', cursive;
-}
-.header-compra{
+.header-top {
+  width: 100%;
+  background-color: #ffe4ec;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style: none;
+  font-family: 'Arima', cursive; }
+  .header-top .header-compra {
     width: 100%;
     display: inline-block;
     display: flex;
@@ -31,242 +30,185 @@
     font-family: 'Arima', cursive;
     font-size: 1.25em;
     align-items: center;
-    align-content: center;
-}
+    align-content: center; }
+    .header-top .header-compra li a {
+      color: black;
+      text-decoration: none;
+      transition: 1s; }
+      .header-top .header-compra li a img {
+        width: 28px;
+        height: 28px;
+        margin-left: 25px; }
+      .header-top .header-compra li a:hover {
+        font-weight: bold; }
 
-.header-compra li a{
-    color: black;
-    text-decoration: none;
-    transition: 1s;
-}
-.header-compra li a:hover{
-    font-weight: bold;    
-}
-/*solo funciona sobre la palabra ingresar siendo que están en la misma línea.*/
-
-.header-compra li img{
-    width: 28px;
-    height: 28px;
-    margin-left: 25px;
-}
-
-header{
-    background-color: #ffe4ec;
-    position: sticky;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header-contenedor{
+header {
+  background-color: #ffe4ec;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center; }
+  header .header-contenedor {
     width: 40rem;
     box-sizing: border-box;
-    display: flex;
-}
+    display: flex; }
+    header .header-contenedor .header-logo {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
 
-.header-logo{
-    width: 120px;
-    height: 120px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.header-menu{
-    background-color: #ffe4ec;
-    width: 100%;
-}
-.nav-item{
+.header-menu {
+  background-color: #ffe4ec;
+  width: 100%; }
+  .header-menu .navbar .nav-item {
     font-family: 'Arima', cursive;
     font-size: 1.25em;
     margin-left: 2.18rem;
     color: black;
-    list-style: none;
-}
-
-.nav-item a:hover{
-    font-weight: bold;    
-}
-
+    list-style: none; }
+    .header-menu .navbar .nav-item a:hover {
+      font-weight: bold; }
 
 /*index-MAIN y pages-productos*/
+.hero {
+  width: 100%;
+  box-sizing: border-box; }
 
-.hero{
-    width: 100%;
-    box-sizing: border-box;
-}
+.productos h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 1.75em;
+  color: black;
+  margin: 1rem; }
 
-h1{
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    font-size: 1.75em;
-    color: black;
-    margin: 1rem;
-}
-.productos{
-    width: 100%;
-    height: 100%;
-}
-
-.productos-listado{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 12px;
-}
-
-.productos-listado-detalle{
+.productos .productos-listado {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 12px; }
+  .productos .productos-listado .productos-listado-detalle {
     max-width: 300px;
     height: 450px;
-    border: 1px solid rgb(207, 198, 198);
+    border: 1px solid #cfc6c6;
     margin: 6px;
     border-top-right-radius: 10px;
-    background-color: #ffe4ec;
-}
-.productos-listado-detalle:hover{
-    box-shadow: 0px 10px 15px 0px #f3aacb;
-}
-.boton{
+    background-color: #ffe4ec; }
+    .productos .productos-listado .productos-listado-detalle img {
+      width: 300px;
+      height: 300px;
+      border-top-right-radius: 10px; }
+    .productos .productos-listado .productos-listado-detalle h2 {
+      font-family: 'Arima', cursive;
+      font-size: 22px;
+      font-style: normal;
+      text-align: left;
+      color: black;
+      padding-left: 5px; }
+    .productos .productos-listado .productos-listado-detalle h3 {
+      font-family: 'Arima', cursive;
+      font-size: 16px;
+      font-style: normal;
+      text-align: left;
+      color: black;
+      padding-left: 5px; }
+    .productos .productos-listado .productos-listado-detalle h4 {
+      font-family: 'Arima', cursive;
+      font-size: 22px;
+      font-style: normal;
+      margin-bottom: 10px;
+      text-align: left;
+      color: black;
+      padding-left: 5px; }
+    .productos .productos-listado .productos-listado-detalle:hover {
+      box-shadow: 0px 10px 15px 0px #f3aacb; }
+    .productos .productos-listado .productos-listado-detalle .boton {
+      text-decoration: none;
+      color: black;
+      padding: 6px;
+      background-color: #ffc1d5;
+      border-radius: 5px;
+      font-family: 'Arima', cursive;
+      font-size: 18px;
+      transition: 1s; }
+      .productos .productos-listado .productos-listado-detalle .boton:hover {
+        background-color: #eb9ac0;
+        font-weight: bold;
+        color: black; }
+
+.contenedor-boton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contenedor-boton .boton-ver-mas .link {
     text-decoration: none;
-    color: black;
-    padding: 6px;
-    background-color: #ffc1d5;
-    border-radius: 5px;
-    font-family: 'Arima', cursive;
-    font-size: 18px;
-    transition: 1s;
-}
-.boton:hover{
-    background-color: #eb9ac0;
-    font-weight: bold;
-    color: black;
-}
-.contenedor-boton{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-ver-mas:hover{
-    background-color: #eb9ac0;
-    font-weight: bold;
-    color: black;
-}
-.link{
-    text-decoration: none;
-    text-align: center; 
-    color: black;
-    padding: 6px;
-    background-color: #ffc1d5;
-    border-radius: 5px;
-    font-family: 'Arima', cursive;
-    font-size: 17px;
-}
-
-.productos-listado-img{
-    width: 300px;
-    height: 300px;
-    border-top-right-radius: 10px
-}
-
-.productos div div h2{
-    font-family: 'Arima', cursive;
-    font-size: 22px;
-    font-style: normal;
-    text-align: left;
-    color: black;
-    padding-left: 5px;
-}
-
-.productos div div h3{
-    font-family: 'Arima', cursive;
-    font-size: 16px;
-    font-style: normal;
-    text-align: left;
-    color: black;
-    padding-left: 5px;
-}
-
-.productos div div h4{
-    font-family: 'Arima', cursive;
-    font-size: 22px;
-    font-style: normal;
-    margin-bottom: 10px;
-    text-align: left;
-    color: black;
-    padding-left: 5px;
-}
-
-.tiempo h2{
-    font-family: 'Arima', cursive;
-    font-size: 1.625em;
-    font-style: normal;
-    text-align: right;
-    color: black;
-    margin-bottom: 1.25rem;
-    margin: 1.25rem;
-}
-
-.tiempo h3{
-    font-family: 'Arima', cursive;
-    font-size: 1.25em;
-    font-style: italic;
-    font-weight: bold;
     text-align: center;
     color: black;
-    text-align: right;
-    margin-bottom: 0.9375rem;
-    margin: 1.25rem;
-}
-
-.tiempo p{
+    padding: 6px;
+    background-color: #ffc1d5;
+    border-radius: 5px;
     font-family: 'Arima', cursive;
-    font-size: 1em;
-    font-style: normal;
-    text-align: right;
-    color: black;
-    margin: 1.25rem;
-}
+    font-size: 17px; }
+  .contenedor-boton .boton-ver-mas:hover {
+    background-color: #eb9ac0;
+    font-weight: bold;
+    color: black; }
 
-.tiempo{
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    background-image: url("../img/demoraprueba.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 0.3125em;
-    margin-top: 0.625em;
-    display: flex;
-    justify-content: right;
-    align-items: flex-start;
-}
+.tiempo {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-image: url("../img/demoraprueba.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0.3125em;
+  margin-top: 0.625em;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start; }
+  .tiempo div {
+    width: 80%; }
+    .tiempo div h2 {
+      font-family: 'Arima', cursive;
+      font-size: 1.625em;
+      font-style: normal;
+      text-align: right;
+      color: black;
+      margin-bottom: 1.25rem;
+      margin: 1.25rem; }
+    .tiempo div h3 {
+      font-family: 'Arima', cursive;
+      font-size: 1.25em;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      text-align: right;
+      margin-bottom: 0.9375rem;
+      margin: 1.25rem; }
+    .tiempo div p {
+      font-family: 'Arima', cursive;
+      font-size: 1em;
+      font-style: normal;
+      text-align: right;
+      color: black;
+      margin: 1.25rem; }
 
-.tiempo div{
-    width: 80%;
-}
 /*grid del index*/
-.grid-container{
-    width: 100%;
-    margin: 5px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 200px;
-}
-
-.grid-container div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 1s;
-}
-.grid-container div img:hover{
-    box-shadow: 0px 10px 6px 0px #eb9ac0;
-}
-.regalos{
+.grid-container {
+  width: 100%;
+  margin: 5px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px; }
+  .grid-container .img1 {
+    grid-column: span 2; }
+  .grid-container .regalos {
     width: 100%;
     height: 100%;
     font-family: 'Arima', cursive;
@@ -275,654 +217,218 @@ h1{
     font-style: normal;
     text-align: center;
     color: black;
-    padding: 1.25em;
-}
-
-.img1{
-    grid-column: span 2;
-}
-
-/*FOOTER*/
-.footer-contenedor{
-    background-color: #ffe4ec;
+    padding: 1.25em; }
+  .grid-container img {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
+    height: 100%;
+    object-fit: cover;
+    transition: 1s; }
+    .grid-container img:hover {
+      box-shadow: 0px 10px 6px 0px #eb9ac0; }
 
-.footer-logo{
+footer .footer-contenedor {
+  background-color: #ffe4ec;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box; }
+  footer .footer-contenedor .footer-logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.footer-logo img{
-    width: 90px;
-    height: 90px;
-}
-
-.footer-items{
+    align-items: center; }
+    footer .footer-contenedor .footer-logo img {
+      width: 90px;
+      height: 90px; }
+  footer .footer-contenedor .footer-items {
     width: 100%;
     list-style: none;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-izquierda-pago h3{
-    font-family: 'Arima', cursive;
-    font-size: 1.125em;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    text-align: left;
-    margin: 0.625rem;
-}
-
-.footer-izquierda-iconos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.footer-izquierda-iconos img{
-    width: 50px;
-    height: 26px;
-    margin: 0px 5px 5px 0px;
-    box-sizing: border-box;
-}
-
-.footer-izquierda-info{
-    font-family: 'Arima', cursive;
-    font-size: 1.125rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    text-align: left;
-    margin: 0.625rem;
-}
-
-.footer-izquierda-enlaces{
-    display: flex;
-    align-items: center;
-    align-content: flex-end;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-.footer-izquierda-enlaces li{
-    list-style: none;
-    font-family: 'Arima', cursive;
-    font-size: 1.25rem;
-    margin: 0.9375rem;
-}
-
-.footer-izquierda-enlaces li a{
-    color: black;
-    text-decoration: none;
-    transition: 1s;
-}
-.footer-izquierda-enlaces li a:hover{
-    text-decoration: overline;
-}
-.footer-derecha-contacto h3{
-    font-family: 'Arima', cursive;
-    font-size: 1.125rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    text-align: right;
-    margin: 0.625rem;
-}
-.footer-derecha-iconos{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-right: 10px;
-    align-items: flex-end;
-    align-content: center;
-}
-
-.footer-derecha-iconos div img{
-    width: 40px;
-    height: 40px;
-}
-
-.footer-derecha-info h4{
-    font-family: 'Arima', cursive;
-    font-size: 1.125rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    text-align: right;
-    margin: 0.625rem;
-}
-
-.footer-derecha-info h3{
-    font-family: 'Arima', cursive;
-    font-size: 0.9375rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    text-align: right;
-    margin: 0.625rem;
-}
-
-/*PRODUCTOS*/
-.input-group{
-    font-family: 'Arima', cursive;
-    font-size: 0.875rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    background-color: #fbd5e5;
-}
-.form-select{
-    outline: none;
-}
-
-.btn-outline-secondary{
-    color: black;
-}
-.btn-outline-secondary:hover{
-    background-color: #eb9ac0;
-    font-weight: bold;
-    color: black;
-}
-/*MAYORISTA*/
-.info-mayorista{
-    width: 100%;
-    height: 100%;
-}
-.info-registro-titulo{
-    font-family: 'Arima', cursive;
-    font-size: 1.5rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    margin-bottom: 0.4375rem;
-    padding: 0.625rem;
-}
-.info-registro p{
-    font-family: 'Arima', cursive;
-    font-size: 1.125em;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    margin-bottom: 0.4375rem;
-    padding: 0.625rem;
-}
-.grid-galeria{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 450px;
-    gap: 15px;
-    padding: 15px;
-    margin-bottom: 10px;
-    align-items: center;
-}
-.grid-galeria div img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    box-shadow: 9px 7px 5px 0px rgba(247,191,216,0.49);
-    -webkit-box-shadow: 9px 7px 5px 0px rgba(247,191,216,0.49);
-    -moz-box-shadow: 9px 7px 5px 0px rgba(247,191,216,0.49);
-    border: #f7bfd8 solid 1px;
-}
-.grid-items{
-    position: relative;
-}
-
-.grid-items h3{
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    background-color: #fbd5e5;
-    color: black;
-    font-family: 'Arima', cursive;
-    font-size: 0.9375rem;
-    font-style: normal;
-    text-align: center;
-}
-.accordion-button{
-    background-color: #fbd5e5;
-}
-.accordion-button:hover{
-    background-color: #eb9ac0;
-    font-weight: bold;
-    color: black;
-}
-.accordion-header{
-    width: 100%;
-    height: 100%;
-    font-family: 'Arima', cursive;
-    font-style: normal;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    margin: 5px;
-}
-.info-relevante h3:hover{
-    background-color: hsla(340, 5%, 78%, 0.87);
-}
-.info-relevante h4{
-    font-family: 'Arima', cursive;
-    font-size: 16px;
-    font-style: normal;
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.info-adicional h2{
-    font-family: 'Arima', cursive;
-    font-size: 1.25rem;
-    font-style: normal;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    margin: 0.75rem; 
-    background-color: #f7bfd8;
-    transition: 1s;
-}
-.info-adicional h2:hover{
-    background-color: hsla(340, 5%, 78%, 0.87);
-}
-.info-adicional h3{
-    font-family:'Arima', cursive;
-    font-size: 1em;
-    font-style: normal;
-    color: black;
-    margin-bottom: 0.9375rem;
-    padding: 0.625rem;
-    text-align: justify;
-    margin-bottom: 0.625rem;
-}
-
-/*ENVÍO*/
-.accordion-header{
-    font-family: 'Arima', cursive;
-    font-style: normal;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    background-color: #fbd5e5;
-    transition: 1s;
-    width: 100%;
-    height: 100%;
-}
-.accordion-header:hover{
-    background-color: hsla(340, 5%, 78%, 0.87);
-}
-.accordion-header:focus{
-    outline:none;
-}
-.accordion-body p{
-    font-family: 'Arima', cursive;
-    font-size: 1rem;
-    font-style: normal;
-    text-align: center;
-    color: black;
-}
-
-.info-imagen img{
-    width: 70%;
-    height: 60%;
-}
-.info-imagen{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 5rem;
-}
-.info-googlemaps{
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0%;
-}
-.info-googlemaps iframe{
-    left:0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-/*CONTACTO*/
-.fondo-principal{
-    background-image: url("../img/contacto.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-.formulario{
-    font-family:'Arima', cursive;
-    font-size: 1rem;
-    font-style: normal;
-    color: black;
-    margin: 0.3125rem;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-}
-.formulario-caja{
-    padding: 0.3125rem;
-    border: #f7bfd8 solid 4px;
-    background-color: #fdeaf2b2;
-}
-
-.btn{
-    text-decoration: none;
-    color: black;
-    padding: 0.375rem;
-    background-color: #ffc1d5;
-    border-radius: 5px;
-    font-family: 'Arima', cursive;
-    font-size: 1.0625em;
-}
-
-.btn:hover{
-    background-color: #eb9ac0;
-    font-weight: bold;
-    color: black;
-}
-
-.form-control:hover{
-    border: 2px solid #eb9ac0;
-}
-
-.form-check-input{
-    border: 1px solid #eb9ac0;
-}
-
-        /*media queris*/
-
-@media screen and (max-width: 970px){
-/*index*/
-    .footer-derecha-contacto h3{
-        text-align: left;
-    }
-    .footer-derecha-iconos{
-        align-items: flex-start;
-    }
-    .footer-derecha-info h4{
-        text-align: left;
-    }
-    .footer-derecha-info h3{
-        text-align: left;
-    } 
-    .tiempo p{
-        font-size: 0.875em;
-    }
-    .header-logo{
-        align-content: stretch;
-    }
-    .header-compra{
-        font-size: 1.0625rem;
-    }
-    .regalos p{
-        font-size: 1rem;
-    }
-    .grid-container div img{
-        object-fit: scale-down;
-    }
-    /*mayoristas*/
-    .grid-galeria{
-        grid-auto-rows: 300px;
-        }
-    .info-adicional h3{
-        font-size: 1em;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width:764px){
-    .tiempo p{
-        font-size: 0.8125em;
-        text-align: center;
-    }
-    .tiempo h3{
-        font-size: 1.0625em;
-        text-align: center;
-    }
-    .tiempo h2{
-        font-size: 1.375em;
-        text-align: center;
-    }
-    .tiempo{
-        text-align: center;
-        justify-content: center;
-    }
-    /*mayoristas*/
-    .info-registro-titulo{
-        font-size: 1.25rem;
-    }
-    .info-registro p{
-        font-size: 1em;
-        text-align: center;
-        }
-        .info-relevante h3{
-        font-size: 1.125em;
-        }
-    .grid-galeria{
-        grid-template-columns: repeate (2,1fr);
-        grid-auto-rows: 158px;
-    }
-    .imagen1{
-        grid-column: span 2; 
-        grid-row: span 2;
-    }
-}
-
-@media screen and (max-width: 572px){
-    .header-logo img{
-        align-items: stretch;
-    }
-    .header-compra{
-        font-size: 1rem;
-    }
-    .header-compra li img{
-        width: 25px;
-        height: 25px;
-    }
-    .header-logo{
-        width: 100px;
-        height: 90px;
-        justify-content: flex-start;
-        align-items:stretch;
-    }
-    .footer-izquierda-iconos{
-        align-items:center;
-        justify-content: center;
-    }
-    .footer-izquierda-pago h3{
-        text-align: center;
-    }
-    .footer-izquierda-enlaces{
-        flex-direction: column;
-    }
-    .footer-izquierda-enlaces li{
-        font-size: 0.9375em;
-        margin: 0.625em;
-    }
-    .footer-items{
-        justify-content: center;
-    }
-    .footer-derecha-info h4{
-        font-size: 0.875em;
-    }
-    .footer-derecha-contacto h3{
-        text-align: center;
-    }
-    .footer-derecha-iconos{
+    justify-content: space-between; }
+    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3 {
+      font-family: 'Arima', cursive;
+      font-size: 1.125em;
+      font-style: normal;
+      text-align: center;
+      color: black;
+      text-align: left;
+      margin: 0.625rem; }
+    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start; }
+      footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos img {
+        width: 50px;
+        height: 26px;
+        margin: 0px 5px 5px 0px;
+        box-sizing: border-box; }
+    footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info {
+      font-family: 'Arima', cursive;
+      font-size: 1.125rem;
+      font-style: normal;
+      text-align: center;
+      color: black;
+      text-align: left;
+      margin: 0.625rem; }
+      footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces {
+        display: flex;
         align-items: center;
-    }
-    .footer-derecha-info h4{
+        align-content: flex-end;
+        flex-wrap: nowrap;
+        justify-content: space-between; }
+        footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li {
+          list-style: none;
+          font-family: 'Arima', cursive;
+          font-size: 1.25rem;
+          margin: 0.9375rem; }
+          footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a {
+            color: black;
+            text-decoration: none;
+            transition: 1s; }
+            footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a:hover {
+              text-decoration: overline; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
+      font-family: 'Arima', cursive;
+      font-size: 1.125rem;
+      font-style: normal;
+      text-align: center;
+      color: black;
+      text-align: right;
+      margin: 0.625rem; }
+    footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-right: 10px;
+      align-items: flex-end;
+      align-content: center; }
+      footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos img {
+        width: 40px;
+        height: 40px; }
+      footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3 {
+        font-family: 'Arima', cursive;
+        font-size: 0.9375rem;
+        font-style: normal;
         text-align: center;
-    }
-    .footer-derecha-info h3{
-        text-align: center;
-    }
-    .grid-container div img{
-        object-fit: scale-down;
-    }
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-    .grid-item{
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    .footer-izquierda-enlaces li{
-        margin: 4px;
-    }
-    .regalos p{
-        padding:0px;
-        }
-/*--productos--*/
-    .input-group{
-        font-size: 0.6875rem;
-    }
-/*mayorista*/
-    .grid-galeria{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 464px;
-        padding: 14px;
-    }
-    .grid-galeria div img{
-        object-fit: contain;
-        box-shadow: none;
-    }
-    .grid-items{
-        grid-column: auto;
-        grid-row: auto;
-    }
-    .grid-items h3{
-        text-align: center;
-        font-size: 17px;
-    }
-    .info-adicional{
-        font-size: 19px;
-        font-weight: none;
-    }
-    .info-adicional h3 {
-        font-size: 14px;
-    }
-}
-
-
-@media screen and (max-width: 544px){
-    .tiempo div{
-        width: 100%;
-    }
-    .tiempo h2{
-        margin: 9px;
-    }
-    .tiempo h3{
-        margin: 5px;
-    }
-/*mayorista*/
-    .grid-galeria{
-    grid-template-columns: auto;
-    grid-auto-rows: 421px;
-    }
-    .info-registro-titulo{
-        font-size: 0.875em;
-    }
-
-/*--envío*/
-    .animate__animated img{
-        display: none;
-    }
-}
-
-@media screen and (max-width:519px){
-/*mayorista*/
-    .grid-galeria{
-        grid-auto-rows: 394px;
-    }
-}
-
-@media screen and (max-width:495px){
-/*mayorista*/
-    .grid-galeria{
-        grid-auto-rows: 375px;
-    }
-}
-
-@media screen and (max-width:415px){
-    .hero-img{
-        object-fit: cover;
-    }
-    .tiempo h2{
-        font-size: 1rem;
-        padding-top:5px;
-    }
-    .tiempo{
-        margin-bottom: 22px;
-        padding: 0px;
-    }  
-    .tiempo p{
-        font-size: 0.6875em;
-        margin: 0px;
-    }
-    .tiempo h3{
-        font-size: 0.8125em;
-    }
-    
-    .grid-container{
-        grid-auto-rows: 168px;
-    }
-    .regalos p{
-        padding: 0px;
-    }   
-/*mayorista*/
-    .grid-galeria{
-        grid-auto-rows: 320px;
-        gap: 0px;
-    }
-    .info-adicional h2 {
+        color: black;
+        text-align: right;
+        margin: 0.625rem; }
+      footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+        font-family: 'Arima', cursive;
         font-size: 1.125rem;
-    }
-    .info-adicional h3 {
-        font-size: 0.8125em;
-    }
-    .info-registro p{
-        font-size: 0.875em;
+        font-style: normal;
         text-align: center;
-    }
-    .accordion-body p{
-        font-size: 0.875rem;
-    }
-}
+        color: black;
+        text-align: right;
+        margin: 0.625rem; }
 
-@media screen and (max-width:370px){
-/*mayoristas*/
-    .grid-galeria{
-        grid-auto-rows: 267px;
-    }
-}
+@media screen and (max-width: 970px) {
+  .header-compra {
+    font-size: 1.0625rem; }
+  .header-logo {
+    align-content: stretch; }
+  .tiempo p {
+    font-size: 1rem; }
+  .grid-container .img2 img {
+    object-fit: scale-down; }
+  .grid-container .regalos p {
+    font-size: 1rem; }
+  .footer-derecha-contacto h3 {
+    text-align: left; }
+  .footer-derecha-iconos {
+    align-items: flex-start; }
+  .footer-derecha-info h3 {
+    text-align: left; } }
 
+@media screen and (max-width: 764px) {
+  .tiempo {
+    justify-content: center; }
+    .tiempo div h2 {
+      font-size: 1.375em;
+      text-align: center; }
+    .tiempo div h3 {
+      font-size: 1.0625em;
+      text-align: center; }
+    .tiempo div p {
+      font-size: 0.8125em;
+      text-align: center; } }
 
+@media screen and (max-width: 574px) {
+  .header-top .header-compra {
+    font-size: 1em; }
+    .header-top .header-compra li img {
+      width: 25px;
+      height: 25px; }
+  .header-logo {
+    width: 100px;
+    height: 90px;
+    justify-content: flex-start;
+    align-items: stretch; }
+    .header-logo img {
+      width: 90px;
+      height: 90px;
+      align-items: stretch; }
+  .grid-container {
+    grid-template-columns: 1fr; }
+    .grid-container .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .grid-container .img1 img {
+      object-fit: scale-down; }
+    .grid-container .regalos p {
+      padding: 0px; }
+  .footer-items .footer-izquierda-pago {
+    justify-content: center; }
+    .footer-items .footer-izquierda-pago h3 {
+      text-align: center; }
+  .footer-items .footer-izquierda-iconos {
+    align-items: center;
+    justify-content: center; }
+  .footer-items .footer-izquierda-enlaces {
+    flex-direction: column; }
+    .footer-items .footer-izquierda-enlaces li {
+      font-size: 0.9375em;
+      margin: 0.625em; }
+  .footer-items .footer-derecha .footer-derecha-contacto h3 {
+    text-align: center; }
+  .footer-items .footer-derecha .footer-derecha-iconos {
+    align-items: center; }
+    .footer-items .footer-derecha .footer-derecha-iconos h3 {
+      text-align: center; }
+    .footer-items .footer-derecha .footer-derecha-iconos h4 {
+      text-align: center; } }
 
+@media screen and (max-width: 544px) {
+  .header-menu .navbar .nav-item {
+    font-size: 1em; }
+  .tiempo div {
+    width: 100%; }
+    .tiempo div h2 {
+      font-size: 1.125em;
+      margin: 9px; }
+    .tiempo div h3 {
+      font-size: 1em;
+      margin: 5px; }
+    .tiempo div p {
+      font-size: 0.8125em; } }
 
-
-
-
-
-
-
+@media screen and (max-width: 544px) and (max-width: 415px) {
+  .hero img {
+    object-fit: cover; }
+  .tiempo div {
+    padding: 0px; }
+    .tiempo div h2 {
+      font-size: 1rem;
+      padding-top: 5px; }
+    .tiempo div h3 {
+      font-size: 0.8125em; }
+    .tiempo div p {
+      font-size: 0.6875em;
+      margin: 0px; }
+  .grid-container {
+    grid-auto-rows: 168px; }
+    .grid-container .regalos p {
+      padding: 0px; } }
