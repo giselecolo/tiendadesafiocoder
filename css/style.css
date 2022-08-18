@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,19 +18,18 @@ h1 {
   width: 100%;
   background-color: #ffe4ec;
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
-  list-style: none;
+  justify-content: flex-end;
   font-family: 'Arima', cursive; }
   .header-top .header-compra {
     width: 100%;
     display: inline-block;
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    list-style: none;
-    font-family: 'Arima', cursive;
+    justify-content: center;
+    font-family: "Arima" cursive;
     font-size: 1.25em;
+    list-style: none;
     align-items: center;
     align-content: center; }
     .header-top .header-compra li a {
@@ -47,8 +48,8 @@ header {
   position: sticky;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center; }
   header .header-contenedor {
     width: 40rem;
@@ -57,38 +58,61 @@ header {
     header .header-contenedor .header-logo {
       width: 120px;
       height: 120px;
-      display: flex;
       justify-content: flex-start;
       align-items: center; }
 
 .header-menu {
   background-color: #ffe4ec;
   width: 100%; }
-  .header-menu .navbar .nav-item {
-    font-family: 'Arima', cursive;
+  .header-menu .navbar .navbar-nav .nav-item {
+    font-family: "Arima" cursive;
     font-size: 1.25em;
+    list-style: none;
     margin-left: 2.18rem;
-    color: black;
-    list-style: none; }
-    .header-menu .navbar .nav-item a:hover {
+    color: black; }
+    .header-menu .navbar .navbar-nav .nav-item a:hover {
       font-weight: bold; }
 
-/*index-MAIN y pages-productos*/
-.hero {
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
-.productos h1 {
+h1 {
   font-family: 'Pacifico', cursive;
   text-align: center;
   font-size: 1.75em;
   color: black;
   margin: 1rem; }
 
+.productos .productos-listado .productos-listado-detalle h2, .productos .productos-listado .productos-listado-detalle h3, .productos .productos-listado .productos-listado-detalle h4 {
+  color: black;
+  font-style: normal;
+  text-align: left;
+  padding-left: 5px;
+  font-family: 'Arima', cursive; }
+
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+  font-family: 'Arima', cursive;
+  font-style: normal;
+  color: black; }
+
+/*index-MAIN*/
+.hero {
+  width: 100%;
+  box-sizing: border-box; }
+
+.productos h1 {
+  font-family: "Pacifico" cursive;
+  color: black;
+  margin: 1rem;
+  font-size: 1.75em;
+  text-align: center; }
+
 .productos .productos-listado {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 12px; }
   .productos .productos-listado .productos-listado-detalle {
     max-width: 300px;
@@ -102,37 +126,20 @@ header {
       height: 300px;
       border-top-right-radius: 10px; }
     .productos .productos-listado .productos-listado-detalle h2 {
-      font-family: 'Arima', cursive;
-      font-size: 22px;
-      font-style: normal;
-      text-align: left;
-      color: black;
-      padding-left: 5px; }
+      font-size: 22px; }
     .productos .productos-listado .productos-listado-detalle h3 {
-      font-family: 'Arima', cursive;
-      font-size: 16px;
-      font-style: normal;
-      text-align: left;
-      color: black;
-      padding-left: 5px; }
-    .productos .productos-listado .productos-listado-detalle h4 {
-      font-family: 'Arima', cursive;
-      font-size: 22px;
-      font-style: normal;
-      margin-bottom: 10px;
-      text-align: left;
-      color: black;
-      padding-left: 5px; }
+      font-size: 16px; }
     .productos .productos-listado .productos-listado-detalle:hover {
       box-shadow: 0px 10px 15px 0px #f3aacb; }
     .productos .productos-listado .productos-listado-detalle .boton {
-      text-decoration: none;
-      color: black;
-      padding: 6px;
       background-color: #ffc1d5;
       border-radius: 5px;
-      font-family: 'Arima', cursive;
+      color: #ffc1d5;
+      padding: 6px;
       font-size: 18px;
+      color: black;
+      font-family: "Arima" cursive;
+      text-decoration: none;
       transition: 1s; }
       .productos .productos-listado .productos-listado-detalle .boton:hover {
         background-color: #eb9ac0;
@@ -147,11 +154,9 @@ header {
   .contenedor-boton .boton-ver-mas .link {
     text-decoration: none;
     text-align: center;
-    color: black;
     padding: 6px;
     background-color: #ffc1d5;
     border-radius: 5px;
-    font-family: 'Arima', cursive;
     font-size: 17px; }
   .contenedor-boton .boton-ver-mas:hover {
     background-color: #eb9ac0;
@@ -174,29 +179,27 @@ header {
     width: 80%; }
     .tiempo div h2 {
       font-family: 'Arima', cursive;
-      font-size: 1.625em;
+      color: black;
+      margin: 1.25rem;
+      font-size: 1.25em;
       font-style: normal;
       text-align: right;
-      color: black;
-      margin-bottom: 1.25rem;
-      margin: 1.25rem; }
+      margin-bottom: 1.25rem; }
     .tiempo div h3 {
-      font-family: 'Arima', cursive;
+      font-family: "Arima" cursive;
+      color: black;
+      margin: 1.25rem;
       font-size: 1.25em;
       font-style: italic;
-      font-weight: bold;
-      text-align: center;
-      color: black;
       text-align: right;
-      margin-bottom: 0.9375rem;
-      margin: 1.25rem; }
+      margin-bottom: 0.9375rem; }
     .tiempo div p {
-      font-family: 'Arima', cursive;
+      font-family: "Arima" cursive;
+      color: black;
+      margin: 1.25rem;
       font-size: 1em;
       font-style: normal;
-      text-align: right;
-      color: black;
-      margin: 1.25rem; }
+      text-align: right; }
 
 /*grid del index*/
 .grid-container {
@@ -211,12 +214,8 @@ header {
   .grid-container .regalos {
     width: 100%;
     height: 100%;
-    font-family: 'Arima', cursive;
-    font-size: 1.5em;
-    font-style: bold;
-    font-style: normal;
+    font-size: 1.25rem;
     text-align: center;
-    color: black;
     padding: 1.25em; }
   .grid-container img {
     width: 100%;
@@ -225,6 +224,18 @@ header {
     transition: 1s; }
     .grid-container img:hover {
       box-shadow: 0px 10px 6px 0px #eb9ac0; }
+
+.productos .productos-listado .productos-listado-detalle h2, .productos .productos-listado .productos-listado-detalle h3, .productos .productos-listado .productos-listado-detalle h4 {
+  color: black;
+  font-style: normal;
+  text-align: left;
+  padding-left: 5px;
+  font-family: 'Arima', cursive; }
+
+.contenedor-boton .boton-ver-mas .link, .grid-container .regalos, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3, footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3, footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
+  font-family: 'Arima', cursive;
+  font-style: normal;
+  color: black; }
 
 footer .footer-contenedor {
   background-color: #ffe4ec;
@@ -247,40 +258,33 @@ footer .footer-contenedor {
     flex-wrap: wrap;
     justify-content: space-between; }
     footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-pago h3 {
-      font-family: 'Arima', cursive;
       font-size: 1.125em;
-      font-style: normal;
-      text-align: center;
-      color: black;
       text-align: left;
       margin: 0.625rem; }
     footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: flex-start; }
+      justify-content: flex-start;
+      flex-direction: row; }
       footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-iconos img {
         width: 50px;
         height: 26px;
         margin: 0px 5px 5px 0px;
         box-sizing: border-box; }
     footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info {
-      font-family: 'Arima', cursive;
       font-size: 1.125rem;
-      font-style: normal;
-      text-align: center;
-      color: black;
       text-align: left;
       margin: 0.625rem; }
       footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces {
         display: flex;
-        align-items: center;
-        align-content: flex-end;
         flex-wrap: nowrap;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-end; }
         footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li {
+          font-family: "Arima" cursive;
+          font-size: 1.25rem;
           list-style: none;
-          font-family: 'Arima', cursive;
           font-size: 1.25rem;
           margin: 0.9375rem; }
           footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a {
@@ -290,18 +294,14 @@ footer .footer-contenedor {
             footer .footer-contenedor .footer-items .footer-izquieda .footer-izquierda-info .footer-izquierda-enlaces li a:hover {
               text-decoration: overline; }
     footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-contacto h3 {
-      font-family: 'Arima', cursive;
       font-size: 1.125rem;
-      font-style: normal;
-      text-align: center;
-      color: black;
       text-align: right;
       margin: 0.625rem; }
     footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
       justify-content: space-evenly;
+      flex-direction: column;
       padding-right: 10px;
       align-items: flex-end;
       align-content: center; }
@@ -309,19 +309,11 @@ footer .footer-contenedor {
         width: 40px;
         height: 40px; }
       footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h3 {
-        font-family: 'Arima', cursive;
         font-size: 0.9375rem;
-        font-style: normal;
-        text-align: center;
-        color: black;
         text-align: right;
         margin: 0.625rem; }
       footer .footer-contenedor .footer-items .footer-derecha .footer-derecha-iconos h4 {
-        font-family: 'Arima', cursive;
         font-size: 1.125rem;
-        font-style: normal;
-        text-align: center;
-        color: black;
         text-align: right;
         margin: 0.625rem; }
 

@@ -1,0 +1,18 @@
+
+$boton:(
+    bg-boton: $color-botones,
+    border-boton: 5px,
+    color-letra: black,
+    padding-boton: 6px,
+    tamaño-letra: 18px,
+    tipo-letra: 'Arima' cursive,
+    linea: none,
+    hover-boton: 1s,
+);
+
+$rosa-hover:(
+    bg-hover: $color-boton-hover,
+    grosor: bold,
+    color-letra: black,
+);
+

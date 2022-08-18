@@ -1,22 +1,17 @@
+
 @import "../base/variables";
+@import "../base/mixin";
 
 .header-top {
     width: 100%;
     background-color: $color-principal;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    list-style: none;
+    @include flex-header (flex, row, flex-end);
     font-family: 'Arima', cursive;
     .header-compra {
         width: 100%;
         display: inline-block;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        list-style: none;
-        font-family: 'Arima', cursive;
-        font-size: 1.25em;
+        @include flex-header (flex, row, center);
+        @include font-1 ('Arima' cursive, 1.25em, none);
         align-items: center;
         align-content: center;
         li {
@@ -42,9 +37,7 @@ header {
 background-color: $color-principal;
 position: sticky;
 width: 100%;
-display: flex;
-justify-content: space-around;
-flex-direction: column;
+@include flex-header (flex, column, space-around);
 align-items: center;
 .header-contenedor {
     width: 40rem;
@@ -53,7 +46,6 @@ align-items: center;
     .header-logo {
         width: 120px;
         height: 120px;
-        display: flex;
         justify-content: flex-start;
         align-items: center;
     }
@@ -64,15 +56,15 @@ align-items: center;
 background-color: $color-principal;
 width: 100%;
 .navbar {
-    .nav-item {
-        font-family: 'Arima', cursive;
-        font-size: 1.25em;
+    .navbar-nav{
+        .nav-item {
+            @include font-1 ('Arima' cursive, 1.25em, none);
         margin-left: 2.18rem;
         color: black;
-        list-style: none;
-        a {
-            &:hover {
-                font-weight: bold;
+            a {
+                &:hover {
+                    font-weight: bold;
+                }
             }
         }
     }

@@ -1,0 +1,41 @@
+
+@mixin flex-header ($flex, $direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin font-1 ($font, $size, $list){
+    font-family: $font;
+    font-size: $size;
+    list-style: $list;
+}
+@mixin font-general ($family, $color, $margen, $size){
+    font-family: $family;
+    color: $color;
+    margin: $margen;
+    font-size: $size;
+}
+@mixin estilos-fuentes ($style, $align){
+    font-style: $style;
+    text-align: $align;
+}
+
+@mixin flex ($flex, $wrap, $justify){
+    display: $flex;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin flex-2($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+@mixin font-footer ($size, $align){
+    font-size: $size;
+    text-align: $align;
+    
+}

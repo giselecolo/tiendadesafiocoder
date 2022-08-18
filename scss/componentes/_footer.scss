@@ -1,4 +1,6 @@
 @import "../base/variables";
+@import "../base/mixin";
+@import "../base/extend";
 
 footer{
     .footer-contenedor{
@@ -8,9 +10,7 @@ footer{
         padding-right: 15px;
         box-sizing: border-box;
         .footer-logo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-2 (flex, center, center);
             img{
                 width: 90px;
                 height: 90px;
@@ -20,26 +20,18 @@ footer{
             width: 100%;
             list-style: none;
             box-sizing: border-box;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            @include flex (flex, wrap, space-between);
             .footer-izquieda{
                 .footer-izquierda-pago{
                     h3{
-                        font-family: 'Arima', cursive;
-                        font-size: 1.125em;
-                        font-style: normal;
-                        text-align: center;
-                        color: black;
-                        text-align: left;
-                        margin: 0.625rem; 
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125em, left);
+                        margin: 0.625rem;
                     }
                 }
                 .footer-izquierda-iconos{
-                    display: flex;
-                    flex-wrap: wrap;
+                    @include flex (flex, wrap, flex-start);
                     flex-direction: row;
-                    justify-content: flex-start;
                     img{
                         width: 50px;
                         height: 26px;
@@ -48,22 +40,15 @@ footer{
                     }
                 }
                 .footer-izquierda-info{
-                    font-family: 'Arima', cursive;
-                    font-size: 1.125rem;
-                    font-style: normal;
-                    text-align: center;
-                    color: black;
-                    text-align: left;
+                    @extend %font-contenido-fijo;
+                    @include font-footer (1.125rem, left);
                     margin: 0.625rem;
                     .footer-izquierda-enlaces{
-                        display: flex;
+                        @include flex (flex, nowrap, space-between);
                         align-items: center;
                         align-content: flex-end;
-                        flex-wrap: nowrap;
-                        justify-content: space-between;
                         li{
-                            list-style: none;
-                            font-family: 'Arima', cursive;
+                            @include font-1 ('Arima' cursive, 1.25rem, none);
                             font-size: 1.25rem;
                             margin: 0.9375rem;
                             a{
@@ -81,20 +66,14 @@ footer{
             .footer-derecha{
                 .footer-derecha-contacto{
                     h3{
-                        font-family: 'Arima', cursive;
-                        font-size: 1.125rem;
-                        font-style: normal;
-                        text-align: center;
-                        color: black;
-                        text-align: right;
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125rem, right);
                         margin: 0.625rem;
                     } 
                 }
                 .footer-derecha-iconos{
-                    display: flex;
-                    flex-wrap: wrap;
+                    @include flex (flex, wrap, space-evenly);
                     flex-direction: column;
-                    justify-content: space-evenly;
                     padding-right: 10px;
                     align-items: flex-end;
                     align-content: center;
@@ -103,21 +82,13 @@ footer{
                         height: 40px;
                     }
                     h3{
-                        font-family: 'Arima', cursive;
-                        font-size: 0.9375rem;
-                        font-style: normal;
-                        text-align: center;
-                        color: black;
-                        text-align: right;
-                        margin: 0.625rem;
+                        @extend %font-contenido-fijo;
+                        @include font-footer (0.9375rem, right);
+                        margin: 0.625rem; 
                     }
                     h4{
-                        font-family: 'Arima', cursive;
-                        font-size: 1.125rem;
-                        font-style: normal;
-                        text-align: center;
-                        color: black;
-                        text-align: right;
+                        @extend %font-contenido-fijo;
+                        @include font-footer (1.125rem, right);
                         margin: 0.625rem;
                     }
                 }
